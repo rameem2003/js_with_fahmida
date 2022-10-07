@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casio Wallclock</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./clock.css">
+</head>
+<body>
+    <div class="frame">
+        <div class="time_line">
+            <h1 id="time">05 : 00 : 00 AM</h1>
+        </div>
+
+        <div id="date_line">04 October 2022, Tuesday</div>
+    </div>
+
+    <script>
+        function clock(){
+            // Create date object
+            let d = new Date();
+
+            let ampm = "AM";
+
+            let hours = d.getHours();
+            let minute = d.getMinutes();
+            let seconds = d.getSeconds();
+
+            let date = d.getDate();
+            let month = d.getMonth();
+            let year = d.getFullYear();
+            let day = d.getDay();
+
+            const arrayOfMonth = ["JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE", "JULY", "AUGUST", "SEPTEMBER", "OCTOBER", "NOVEMBER", "DECEMBER"];
+
+            const arrayOfDay = ["SUNDAY", "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY"];
+
+            if(hours >= 12){
+                ampm = "PM"
+            }else{
+                ampm = "AM"
+            }
+
+            if(hours > 12){
+                hours = hours - 12;
+            }
+
+            if(minute < 10){
+                minute = `0${minute}`
+            }
+
+            if(hours < 10){
+                hours = `0${hours}`;
+            }
+
+            if(seconds < 10){
+                seconds = `0${seconds}`;
+            }
+
+            document.getElementById("time").innerHTML = `${hours} : ${minute} : ${seconds} ${ampm}`;
+            document.getElementById("date_line").innerHTML = `${date} ${arrayOfMonth[month]} ${year}, ${arrayOfDay[day]}`;
+
+            setInterval(clock, 1000);
+        }
+
+        clock();
+
+
+
+
+    </script>
+
+
+</body>
+</html>
