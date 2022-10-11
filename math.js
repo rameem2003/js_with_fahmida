@@ -32,14 +32,16 @@
 // }
 
 
-let input = parseInt(prompt("Enter the number: "))
+// let input = parseInt(prompt("Enter the number: "))
 
-if(input <= "10"){
-    document.getElementById("msg").innerHTML = "Good morning";
-}else if(input == "12"){
-    document.getElementById("msg").innerHTML = "Good afternoon";
-}else if(input == "18"){
-    document.getElementById("msg").innerHTML = "Good evening";
-}else{
-    document.getElementById("msg").innerHTML = "Good night";
-}
+// if(input <= "10"){
+//     document.getElementById("msg").innerHTML = "Good morning";
+// }else if(input == "12"){
+//     document.getElementById("msg").innerHTML = "Good afternoon";
+// }else if(input == "18"){
+//     document.getElementById("msg").innerHTML = "Good evening";
+// }else{
+//     document.getElementById("msg").innerHTML = "Good night";
+// }
+
+
