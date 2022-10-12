@@ -30,46 +30,46 @@
 
 
 
-// let names = prompt("Enter name");
+let favfood = prompt("Enter your favourite food")
 
-// if(names != "rameem"){
-//     document.getElementById("msg").innerHTML = "She is female"
-// }else{
-//     document.getElementById("msg").innerHTML = "No its male"
-// }
+if(favfood != "muri"){
+  document.getElementById("msg").innerHTML = "Its fahmida"
+}else{
+  document.getElementById("msg").innerHTML = "Its rameem"
+}
 
 // switch
 
 
-switch (new Date().getDay()) {
-    case 0:
-      day = "Sunday";
-      console.log(day);
-      break;
-    case 1:
-      day = "Monday";
-      console.log(day);
-      break;
-    case 2:
-       day = "Tuesday";
-       console.log(day);
-      break;
-    case 3:
-      day = "Wednesday";
-      console.log(day);
-      break;
-    case 4:
-      day = "Thursday";
-      console.log(day);
-      break;
-    case 5:
-      day = "Friday";
-      console.log(day);
-      break;
-    case 6:
-      day = "Saturday";
-      console.log(day);
-  }
+// switch (new Date().getDay()) {
+//     case 0:
+//       day = "Sunday";
+//       console.log(day);
+//       break;
+//     case 1:
+//       day = "Monday";
+//       console.log(day);
+//       break;
+//     case 2:
+//        day = "Tuesday";
+//        console.log(day);
+//       break;
+//     case 3:
+//       day = "Wednesday";
+//       console.log(day);
+//       break;
+//     case 4:
+//       day = "Thursday";
+//       console.log(day);
+//       break;
+//     case 5:
+//       day = "Friday";
+//       console.log(day);
+//       break;
+//     case 6:
+//       day = "Saturday";
+//       console.log(day);
+//   }
 
 
 
