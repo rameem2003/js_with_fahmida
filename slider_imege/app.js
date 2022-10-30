@@ -27,6 +27,21 @@ btnRight.addEventListener("click", () => {
 })
 
 
+btnLeft.addEventListener("click", () => {
+    position--;
+
+    if(position < 0){
+        position = count - 1;
+    }
+
+    console.log(position);
+
+    imgLoader.src = `./imgs/${legendaryImg[position]}`;
+})
+
+
+
+
 
 
 window.onload = () => {
