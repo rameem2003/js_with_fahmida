@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+
+    <style>
+        table{
+            width: 90%;
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+
+        th, td{
+            border: 2px solid black;
+            text-align: center;
+        }
+
+        /* tr:nth-child(2) td:nth-child(1){
+            background-color: red;
+        } */
+
+
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Roll</th>
+            <th>Registration</th>
+            <th>food</th>
+        </tr>
+
+        <tr>
+            <td>Mahmood Hassan Rameem</td>
+            <td>451638</td>
+            <td>1502020501</td>
+            <td rowspan="2">Coffee</td>
+        </tr>
+
+        <tr>
+            <td>Fahmida Yeasmin</td>
+            <td colspan="2">451628</td>
+            <!-- <td>1502020514</td> -->
+        </tr>
+
+        <tr>
+            <td>Rasel</td>
+            <td>451670</td>
+            <td rowspan="2">4546486464</td>
+            <td>muri</td>
+        </tr>
+
+        <tr>
+            <td>Abdul Baten</td>
+            <td>451627</td>
+            <!-- <td>46464548548</td> -->
+            <td>vat</td>
+        </tr>
+    </table>
+</body>
+</html>
