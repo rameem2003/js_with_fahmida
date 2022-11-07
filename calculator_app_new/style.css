@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #109DFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.frame{
+    margin: 0 auto;
+    width: 350px;
+    background: linear-gradient(191.34deg, #17181A -4.95%, #17181A 103.74%);
+    padding: 20px 25px;
+    border-radius: 20px;
+}
+
+.screen{
+    height: 140px;
+    margin-bottom: 20px;
+}
+
+.screen input{
+    width: 100%;
+    text-align: right;
+    padding: 0 20px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: white;
+
+}
+
+.screen #input_screen{
+    height: 40%;
+    font-size: 25px;
+}
+
+.screen #output_screen{
+    height: 60%;
+    font-size: 45px;
+}
+
+.number_pad ul{
+    list-style-type: none;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.number_pad ul li button{
+    border-radius: 20px;
+    width: 60px;
+    height: 60px;
+    border: none;
+    outline: none;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.number_pad ul:nth-child(4),
+.number_pad ul:nth-child(5){
+    justify-content: flex-start;
+}
+
+.number_pad ul:nth-child(4) li button,
+.number_pad ul:nth-child(5) li button{
+    margin-right: 20px;
+}
+
+.number_pad ul:nth-child(5) li:nth-child(1) button{
+    width: 139px;
+}
+
+.number_pad ul:nth-child(3) li:nth-child(4) button{
+    height: 100px;
+}
+
+.number_pad ul:nth-child(5) li:nth-child(3){
+    position: relative;
+}
+
+.number_pad ul:nth-child(5) li:nth-child(3) button{
+    position: absolute;
+    height: 100px;
+    bottom: -63px;
+}
+
