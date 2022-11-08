@@ -13,45 +13,48 @@
 <body>
     <div class="frame">
         <div class="screen">
-            <input type="text" name="" id="input_screen">
-            <input type="text" name="" id="output_screen">
+            <input type="text" name="" id="input_screen" readonly>
+            <input type="text" name="" id="output_screen" readonly>
         </div>
 
         <div class="number_pad">
             <ul>
-                <li><button>AC</button></li>
-                <li><button><i class="fa-solid fa-delete-left"></i></button></li>
-                <li><button>/</button></li>
-                <li><button>*</button></li>
+                <li><button onclick="clearScreen()">AC</button></li>
+                <li><button onclick="back()"><i class="fa-solid fa-delete-left"></i></button></li>
+                <li><button onclick="digit('/')">/</button></li>
+                <li><button onclick="digit('*')">*</button></li>
             </ul>
 
             <ul>
-                <li><button>7</button></li>
-                <li><button>8</button></li>
-                <li><button>9</button></li>
-                <li><button>-</button></li>
+                <li><button onclick="digit('7')">7</button></li>
+                <li><button onclick="digit('8')">8</button></li>
+                <li><button onclick="digit('9')">9</button></li>
+                <li><button onclick="digit('-')">-</button></li>
             </ul>
 
             <ul>
-                <li><button>4</button></li>
-                <li><button>5</button></li>
-                <li><button>6</button></li>
-                <li><button>+</button></li>
+                <li><button onclick="digit('4')">4</button></li>
+                <li><button onclick="digit('5')">5</button></li>
+                <li><button onclick="digit('6')">6</button></li>
+                <li><button onclick="digit('+')">+</button></li>
             </ul>
 
             <ul>
-                <li><button>1</button></li>
-                <li><button>2</button></li>
-                <li><button>3</button></li>
+                <li><button onclick="digit('1')">1</button></li>
+                <li><button onclick="digit('2')">2</button></li>
+                <li><button onclick="digit('3')">3</button></li>
             </ul>
 
             <ul>
-                <li><button>0</button></li>
-                <li><button>.</button></li>
-                <li><button>=</button></li>
+                <li><button onclick="digit('0')">0</button></li>
+                <li><button onclick="digit('.')">.</button></li>
+                <li><button onclick="calc()">=</button></li>
             </ul>
 
         </div>
     </div>
+
+
+    <script src="./app.js"></script>
 </body>
 </html>

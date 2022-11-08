@@ -62,8 +62,17 @@ body{
     outline: none;
     font-size: 25px;
     font-weight: bold;
+    cursor: grabbing;
+    background-color: #303136;
+    color: #29A8FF;
 }
 
+.number_pad ul li button:active{
+    background-color: white;
+}
+
+
+/* button position */
 .number_pad ul:nth-child(4),
 .number_pad ul:nth-child(5){
     justify-content: flex-start;
@@ -91,4 +100,33 @@ body{
     height: 100px;
     bottom: -63px;
 }
+
+/* button position end */
+
+
+
+
+/* button color */
+.number_pad ul:nth-child(1) li:nth-child(1) button,
+.number_pad ul:nth-child(1) li:nth-child(2) button{
+    background-color: #616161;
+    color: #A5A5A5;
+}
+
+.number_pad ul:nth-child(1) li:nth-child(3) button,
+.number_pad ul:nth-child(1) li:nth-child(4) button,
+.number_pad ul:nth-child(2) li:nth-child(4) button,
+.number_pad ul:nth-child(3) li:nth-child(4) button{
+    background-color: #005DB2;
+    color: #339DFF;
+}
+
+.number_pad ul:nth-child(5) li:nth-child(3) button{
+    background-color: #1991FF;
+    color: #B2DAFF;
+}
+
+
+
+/* button color end */
 
