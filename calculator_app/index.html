@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator UI Fahmida Yeasmin</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="frame">
+        <div class="screens">
+            <input type="text" name="" class="input_screen" id="input_screen" readonly>
+            <input type="text" name="" class="output_screen" id="output_screen" placeholder="0" readonly>
+        </div>
+
+        <div class="number_pad">
+            <ul>
+                <li><button onclick="clearScreen()">AC</button></li>
+                <li><button onclick="sliceDigit()"><i class="fa-solid fa-delete-left"></i></button></li>
+                <li><button>/</button></li>
+                <li><button onclick="printDigit('*')">*</button></li>
+            </ul>
+
+            <ul>
+                <li><button onclick="printDigit('7')">7</button></li>
+                <li><button onclick="printDigit('8')">8</button></li>
+                <li><button onclick="printDigit('9')">9</button></li>
+                <li><button onclick="printDigit('-')">-</button></li>
+            </ul>
+
+            <ul>
+                <li><button onclick="printDigit('4')">4</button></li>
+                <li><button onclick="printDigit('5')">5</button></li>
+                <li><button onclick="printDigit('6')">6</button></li>
+                <li><button onclick="printDigit('+')">+</button></li>
+            </ul>
+
+            <ul>
+                <li><button onclick="printDigit('1')">1</button></li>
+                <li><button onclick="printDigit('2')">2</button></li>
+                <li><button onclick="printDigit('3')">3</button></li>
+
+            </ul>
+
+            <ul>
+                <li><button onclick="printDigit('0')">0</button></li>
+                <li><button onclick="printDigit('.')">.</button></li>
+                <li><button onclick="calc()">=</button></li>
+            </ul>
+
+
+        </div>
+    </section>
+
+    <script src="./app.js"></script>
+</body>
+</html>

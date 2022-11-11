@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #109DFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.frame{
+    width: 355px;
+    background: linear-gradient(191.34deg, #17181A -4.95%, #17181A 103.74%);
+    padding: 20px 30px;
+    border-radius: 20px;
+}
+
+.frame .screens{
+    height: 150px;
+    margin-bottom: 30px;
+}
+
+.frame .screens input{
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+
+.frame .screens .input_screen{
+    height: 30%;
+    text-align: right;
+    font-size: 25px;
+    /* color: #818181; */
+    color: #005DB2;
+}
+
+.frame .screens .output_screen{
+    height: 70%;
+    text-align: right;
+    font-size: 60px;
+}
+
+.frame .number_pad ul{
+    height: 85px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.frame .number_pad ul li{
+    margin-bottom: 10px;
+}
+
+.frame .number_pad ul li button{
+    height: 62px;
+    width: 62px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-size: 25px;
+    color: #29A8FF;
+    background-color: #303136;
+    cursor: grab;
+    transition: 0.5s linear;
+}
+
+.frame .number_pad ul li button:active{
+    background-color: white;
+}
+
+/* individual position */
+
+.frame .number_pad ul:nth-child(4),
+.frame .number_pad ul:nth-child(5){
+    justify-content: flex-start;
+}
+
+
+.frame .number_pad ul:nth-child(4) li,
+.frame .number_pad ul:nth-child(5) li{
+    margin-right: 17px;
+}
+
+.frame .number_pad ul:nth-child(3){
+    align-items: flex-start;
+}
+
+.frame .number_pad ul:last-child li:first-child button{
+    width: 140px;
+}
+
+.frame .number_pad ul:nth-child(3) li:last-child button{
+    height: 106px;
+}
+
+.frame .number_pad ul:last-child li:last-child{
+    position: relative;
+}
+
+.frame .number_pad ul:last-child li:last-child button{
+    position: absolute;
+    height: 109px;
+    bottom: -65px;
+    left: -4px;
+}
+/* individual position end*/
+
+
+
+
+/* button color  */
+.frame .number_pad ul:first-child li:first-child button,
+.frame .number_pad ul:first-child li:nth-child(2) button{
+    background-color: #616161;
+    color: white;
+}
+.frame .number_pad ul:first-child li:nth-child(3) button{
+    background-color: #005DB2;
+}
+
+.frame .number_pad ul:first-child li:nth-child(4) button{
+    background-color: #005DB2;
+}
+
+.frame .number_pad ul:nth-child(2) li:nth-child(4) button{
+    background-color: #005DB2;
+}
+
+.frame .number_pad ul:nth-child(3) li:nth-child(4) button{
+    background-color: #005DB2;
+}
+
+.frame .number_pad ul:nth-child(5) li:nth-child(3) button{
+    background-color: #1991FF;
+    color: white;
+}
+/* button color end */
