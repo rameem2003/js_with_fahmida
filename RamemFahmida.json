@@ -1,0 +1,19 @@
+{
+    "developers" : [
+        {
+            "id" : 451628,
+            "name" : "Fahmida Yeasmin",
+            "contribution" : "Frontend",
+            "State" : "Project Owner",
+            "img" : "https://rameem2003.github.io/oursite/img/gallery/fahmida.jpg"
+        },
+
+        {
+            "id" : 451638,
+            "name" : "mahmood Hassan Rameem",
+            "contribution" : "Backend",
+            "State" : "Associate Partner",
+            "img" : "https://rameem2003.github.io/oursite/img/gallery/MAHMOOD%20HASSAN%20RAMEEM%201.jpg"
+        }
+    ]
+}
