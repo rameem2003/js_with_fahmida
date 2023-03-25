@@ -1,23 +1,38 @@
-const searchItem = document.getElementById("searchItem");
-const btn = document.getElementById("btn");
-const result = document.getElementById("result");
+const inputCountry = document.getElementById("inputCountry");
+const searchBtn = document.getElementById("searchBtn");
 
 
-btn.addEventListener("click", () => {
-    let country = searchItem.value;
-    // console.log(country);
+const search_box = document.getElementById("search_box");
+const cards = document.querySelector(".cards");
 
+
+searchBtn.addEventListener("click", () => {
+    search_box.classList.add("hide");
+    cards.classList.add("show");
+
+    let countryName = inputCountry.value;
+
+    fetchUniversity(countryName);
+})
+
+
+
+
+
+
+function fetchUniversity (country) {
     fetch(`http://universities.hipolabs.com/search?country=${country}`).then(response => response.json()).then(data => {
         console.log(data);
 
-        let universityName = "";
-        data.forEach(element => {
+        cards.innerHTML = `${data.map(element => {
+            return `<div class="card">
+                        <h1>${element.name}</h1>
 
-            universityName = universityName + `<li>${element.name}</li>`
-
-        })
-        
-        result.innerHTML = universityName;
+                        <div class="flex">
+                            <span>${element.country}</span>
+                            <a href="${element.web_pages[0]}">${element.web_pages[0]}</a>
+                        </div>
+                    </div>`
+        })}`
     })
-})
-
+}

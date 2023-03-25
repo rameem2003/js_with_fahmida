@@ -61,6 +61,10 @@ header .right a{
 -moz-box-shadow: 10px 10px 32px 21px rgba(0,0,0,0.76);
 }
 
+#search_box.hide{
+    display: none;
+}
+
 #search_box #inputCountry{
     width: 90%;
     height: 100%;
@@ -80,5 +84,58 @@ header .right a{
     border: none;
     cursor: pointer;
 }
+
+
+
+
+.cards{
+    margin-top: 120px;
+    width: 90%;
+    background-color: white;
+    padding: 10px;
+
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.cards.show{
+    display: flex;
+}
+
+.card{
+    width: 30%;
+    height: 200px;
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 15px 9px 8px rgba(0,0,0,0.35);
+-webkit-box-shadow: 1px 15px 9px 8px rgba(0,0,0,0.35);
+-moz-box-shadow: 1px 15px 9px 8px rgba(0,0,0,0.35);
+overflow: hidden;
+}
+
+.card h1{
+    font-size: 28px;
+    text-align: center;
+}
+
+.card .flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.card .flex span{
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
 
 
