@@ -96,9 +96,10 @@ header .right a{
 
     display: none;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
 }
+
 
 .cards.show{
     display: flex;
