@@ -23,6 +23,17 @@
 
     
 
-   <script src="./slice_value.js"></script>
+   <!-- <script src="./slice_value.js"></script> -->
+
+
+   <script>
+    navigator.getBattery().then(bt => {
+        console.log(bt);
+    })
+
+    console.log(navigator.connection);
+    console.log(navigator.deviceMemory);
+    console.log(navigator.keyboard);
+   </script>
 </body>
 </html>
